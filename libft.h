@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:20:10 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/06 12:07:03 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/06 14:29:10 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,16 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
+void	ft_putchar(char c);
+void	ft_putstr(char const *s);
+void	*ft_memalloc(size_t size);
+void	ft_memdel(void **ap);
+char	*ft_strnew(size_t size);
+void	ft_strdel(char **as);
+void	ft_strclr(char *s);
+void	ft_striter(char *s, void (*f) (char*));
+void	ft_striteri(char *s, void (*f) (unsigned int, char*));
+char	*ft_strmap(char const *s, char (*f) (char));
+char	*ft_strmapi(char const *s, char (*f) (unsigned int, char));
 
 #endif
