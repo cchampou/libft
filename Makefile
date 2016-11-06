@@ -6,7 +6,7 @@
 #    By: cchampou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 20:26:57 by cchampou          #+#    #+#              #
-#    Updated: 2016/11/06 10:33:21 by cchampou         ###   ########.fr        #
+#    Updated: 2016/11/06 10:39:14 by cchampou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,8 @@ C_FILES = 	ft_strlen.c		\
 			ft_strchr.c		\
 			ft_strrchr.c	\
 			ft_strstr.c		\
-			ft_strnstr.c
+			ft_strnstr.c	\
+			ft_strcmp.c
 
 O_FILES = $(C_FILES:.c=.o)
 
