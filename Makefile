@@ -6,7 +6,7 @@
 #    By: cchampou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 20:26:57 by cchampou          #+#    #+#              #
-#    Updated: 2016/11/06 16:56:41 by cchampou         ###   ########.fr        #
+#    Updated: 2016/11/06 17:13:04 by cchampou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,8 @@ C_FILES = 	ft_strlen.c		\
 			ft_strsplit.c	\
 			ft_itoa.c		\
 			ft_putendl.c	\
-			ft_putnbr.c
+			ft_putnbr.c		\
+			ft_putchar_fd.c
 
 O_FILES = $(C_FILES:.c=.o)
 
