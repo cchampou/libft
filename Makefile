@@ -6,7 +6,7 @@
 #    By: cchampou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 20:26:57 by cchampou          #+#    #+#              #
-#    Updated: 2016/11/06 16:18:07 by cchampou         ###   ########.fr        #
+#    Updated: 2016/11/06 16:40:57 by cchampou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,8 @@ C_FILES = 	ft_strlen.c		\
 			ft_strsub.c		\
 			ft_strjoin.c	\
 			ft_strtrim.c	\
-			ft_strsplit.c
+			ft_strsplit.c	\
+			ft_itoa.c
 
 O_FILES = $(C_FILES:.c=.o)
 
