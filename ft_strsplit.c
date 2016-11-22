@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 15:54:28 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/06 16:20:19 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/22 10:00:03 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	**ft_strsplit(char const *s, char c)
 	while (s[i])
 	{
 		words = (s[i] != c && space) ? words + 1 : words;
-		space = ((s[i++] == c) ? 1 : 0);
+		space = ((s[i++] == c && c != ' ') ? 1 : 0);
 	}
 	if (!(table = (char**)malloc(sizeof(table) * (words + 1))))
 		return (NULL);

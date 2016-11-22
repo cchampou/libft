@@ -6,13 +6,13 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 04:20:31 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/07 15:55:20 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/22 11:38:43 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memccpy(void *restrict dst, const void *restrict src,
+void	*ft_memccpy(void *dst, const void *src,
 		int c, size_t n)
 {
 	size_t			i;

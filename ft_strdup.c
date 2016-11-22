@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 01:23:12 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/07 15:05:37 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/22 11:23:58 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s1)
 
 	cpt = 0;
 	length = (size_t)ft_strlen(s1);
-	if(!(output = (char*)malloc((length + 1) * sizeof(char))))
+	if (!(output = (char*)malloc((length + 1) * sizeof(char))))
 		return (NULL);
 	while (cpt < length)
 	{
