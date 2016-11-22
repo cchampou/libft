@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/06 10:39:36 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/22 17:51:14 by cchampou         ###   ########.fr       */
+/*   Created: 2016/11/22 16:24:15 by cchampou          #+#    #+#             */
+/*   Updated: 2016/11/22 17:24:07 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+t_list	*ft_lstmap(t_list *lst, t_list *(*f) (t_list *elem))
 {
-	size_t	i;
+	t_list	*newlst;
+	t_list	*new;
+	t_list	*tmp;
 
-	i = 0;
-	if (n == 0)
+	tmp = f(lst);
+	new = ft_lstnew(tmp->content, tmp->content_size);
+	newlst = new;
+	lst = lst->next;
+	while (lst)
 	{
-		return (0);
+		tmp = f(lst);
+		if ((new->next = ft_lstnew(tmp->content, tmp->content_size)))
+			new = new->next;
+		else
+			return (NULL);
+		lst = lst->next;
 	}
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < n)
-	{
-		i++;
-	}
-	if (i == n)
-		return (((unsigned char*)s1)[i - 1] - ((unsigned char*)s2)[i - 1]);
-	else
-		return (((unsigned char*)s1)[i] - ((unsigned char*)s2)[i]);
+	return (newlst);
 }

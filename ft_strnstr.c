@@ -6,35 +6,28 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 09:50:08 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/06 10:33:24 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/22 18:42:42 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char		*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int	i;
-	int	j;
+	size_t	c;
+	int		i;
 
+	c = 0;
 	i = 0;
-	j = 0;
-	if (ft_strlen(little) == 0)
-	{
+	if (!*little)
 		return ((char*)big);
-	}
-	while (big[i] != '\0')
+	while (big[c] && c < len)
 	{
-		while (big[i++] == little[j++])
-		{
-			if ((j == (int)ft_strlen(little) || j == (int)len)
-					&& i <= (int)len)
-			{
-				return (&((char*)big)[i - j]);
-			}
-		}
-		j = 0;
-		i++;
+		i = 0;
+		while (big[c + i] == little[i] && c + i < len)
+			if (little[1 + i++] == '\0')
+				return ((char*)&big[c]);
+		c++;
 	}
-	return (NULL);
+	return (0);
 }

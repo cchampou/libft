@@ -6,7 +6,7 @@
 #    By: cchampou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 20:26:57 by cchampou          #+#    #+#              #
-#    Updated: 2016/11/06 17:24:06 by cchampou         ###   ########.fr        #
+#    Updated: 2016/11/22 16:37:39 by cchampou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,12 +58,20 @@ C_FILES = 	ft_strlen.c		\
 			ft_strtrim.c	\
 			ft_strsplit.c	\
 			ft_itoa.c		\
+			ft_putchar.c	\
+			ft_putstr.c		\
 			ft_putendl.c	\
 			ft_putnbr.c		\
 			ft_putchar_fd.c	\
 			ft_putstr_fd.c	\
 			ft_putendl_fd.c	\
-			ft_putnbr_fd.c
+			ft_putnbr_fd.c	\
+			ft_lstnew.c		\
+			ft_lstdelone.c	\
+			ft_lstdel.c		\
+			ft_lstadd.c		\
+			ft_lstiter.c	\
+			ft_lstmap.c
 
 O_FILES = $(C_FILES:.c=.o)
 
