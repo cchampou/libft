@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 15:23:14 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/08 15:56:34 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 13:31:43 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ char	*ft_strtrim(char const *s)
 	int		j;
 	int		end;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	j = 0;
 	end = (int)ft_strlen(s) - 1;
