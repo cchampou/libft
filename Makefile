@@ -6,7 +6,7 @@
 #    By: cchampou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 20:26:57 by cchampou          #+#    #+#              #
-#    Updated: 2016/11/22 16:37:39 by cchampou         ###   ########.fr        #
+#    Updated: 2016/11/23 15:23:44 by cchampou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,8 +71,9 @@ C_FILES = 	ft_strlen.c		\
 			ft_lstdel.c		\
 			ft_lstadd.c		\
 			ft_lstiter.c	\
-			ft_lstmap.c
-
+			ft_lstmap.c		\
+			ft_str_is_alpha.c	\
+			ft_str_is_numeric.c
 O_FILES = $(C_FILES:.c=.o)
 
 all: $(NAME)
