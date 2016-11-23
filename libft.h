@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:20:10 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 16:26:05 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 17:49:04 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,9 +94,14 @@ int					ft_str_is_numeric(char *s);
 int					ft_str_is_printable(char *s);
 int					ft_str_is_lowercase(char *s);
 int					ft_str_is_uppercase(char *s);
-int					ft_islower(char c);
-int					ft_isupper(char c);
+int					ft_islower(int c);
+int					ft_isupper(int c);
 char				*ft_strndup(const char *s1, size_t n);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+int					ft_isblank(int c);
+int					ft_iscntrl(int c);
+int					ft_isgraph(int c);
+int					ft_isxdigit(int c);
+char				*ft_strcapitalize(char *s);
 
 #endif

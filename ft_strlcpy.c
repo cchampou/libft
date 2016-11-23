@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 16:24:34 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 16:37:06 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 16:47:01 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	
 	size_t	length;
 
 	length = ft_strlen(src);
