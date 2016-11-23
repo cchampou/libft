@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:20:10 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 15:12:16 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 16:15:12 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,5 +91,11 @@ void				ft_lstiter(t_list *lst, void (*f) (t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f) (t_list *elem));
 int					ft_str_is_alpha(char *s);
 int					ft_str_is_numeric(char *s);
+int					ft_str_is_printable(char *s);
+int					ft_str_is_lowercase(char *s);
+int					ft_str_is_uppercase(char *s);
+int					ft_islower(char c);
+int					ft_isupper(char c);
+char				*ft_strndup(const char *s1, size_t n);
 
 #endif

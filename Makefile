@@ -6,7 +6,7 @@
 #    By: cchampou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 20:26:57 by cchampou          #+#    #+#              #
-#    Updated: 2016/11/23 15:23:44 by cchampou         ###   ########.fr        #
+#    Updated: 2016/11/23 16:14:47 by cchampou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,8 +72,15 @@ C_FILES = 	ft_strlen.c		\
 			ft_lstadd.c		\
 			ft_lstiter.c	\
 			ft_lstmap.c		\
+			ft_isupper.c	\
+			ft_islower.c	\
 			ft_str_is_alpha.c	\
-			ft_str_is_numeric.c
+			ft_str_is_numeric.c	\
+			ft_str_is_printable.c	\
+			ft_str_is_lowercase.c	\
+			ft_str_is_uppercase.c	\
+			ft_strndup.c
+
 O_FILES = $(C_FILES:.c=.o)
 
 all: $(NAME)
