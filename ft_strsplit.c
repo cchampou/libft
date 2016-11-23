@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 15:54:28 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/22 19:24:52 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 20:21:12 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,25 @@
 char	**ft_strsplit(char const *s, char c)
 {
 	char	**table;
-	int		param[4];
+	int		words;
+	int		cpt;
+	int		length;
 
-	CPT = 0;
-	SPACE = 1;
-	WORDS = 0;
-	while (s[CPT])
-	{
-		WORDS = (s[CPT] != c && SPACE) ? WORDS + 1 : WORDS;
-		SPACE = ((s[CPT++] == c) ? 1 : 0);
-	}
-	if (!(table = (char**)malloc(sizeof(table) * (WORDS + 1))))
+	if (!s)
 		return (NULL);
-	table[WORDS] = NULL;
-	while (CPT-- >= 0)
+	words = ft_count_words(s, c);
+	cpt = ft_strlen(s);
+	if (!s || !(table = (char**)malloc(sizeof(table) * (words + 1))))
+		return (NULL);
+	table[words] = NULL;
+	while (cpt-- >= 0)
 	{
-		if (s[CPT] != c)
+		if (s[cpt] != c)
 		{
-			LENGTH = CPT;
-			while (s[CPT] != c && CPT != -1)
-				--CPT;
-			table[--WORDS] = ft_strsub(s, CPT + 1, LENGTH - CPT);
+			length = cpt;
+			while (s[cpt] != c && cpt != -1)
+				--cpt;
+			table[--words] = ft_strsub(s, cpt + 1, length - cpt);
 		}
 	}
 	return (table);

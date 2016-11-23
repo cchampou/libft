@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:11:19 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/06 14:28:56 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 19:03:19 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	size_t	length;
 	char	*out;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
 	length = (size_t)ft_strlen((char*)s);
 	out = ft_strnew(length);

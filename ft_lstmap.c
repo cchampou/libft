@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/22 16:24:15 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/22 17:24:07 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 19:20:06 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f) (t_list *elem))
 	t_list	*new;
 	t_list	*tmp;
 
+	if (!lst || !f)
+		return (NULL);
 	tmp = f(lst);
 	new = ft_lstnew(tmp->content, tmp->content_size);
 	newlst = new;

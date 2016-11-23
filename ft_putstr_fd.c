@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:15:55 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/06 17:18:40 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 19:18:59 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	while (*s != 0)
+	if (s)
 	{
-		ft_putchar_fd(*s, fd);
-		s++;
+		while (*s != 0)
+		{
+			ft_putchar_fd(*s, fd);
+			s++;
+		}
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 13:06:09 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/06 13:08:46 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 18:42:39 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,13 @@
 void	ft_strclr(char *s)
 {
 	int	max;
-	int	i;
 
-	i = 0;
-	max = ft_strlen(s);
-	while (i < max)
+	if (s)
 	{
-		s[i++] = 0;
+		max = ft_strlen(s);
+		while (max--)
+		{
+			s[max] = 0;
+		}
 	}
 }

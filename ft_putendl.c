@@ -6,19 +6,21 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 16:51:22 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/06 16:54:31 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 19:18:04 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "unistd.h"
 
 void	ft_putendl(char const *s)
 {
-	while (*s != 0)
+	if (s)
 	{
-		ft_putchar(*s);
-		s++;
+		while (*s != 0)
+		{
+			ft_putchar(*s);
+			s++;
+		}
+		ft_putchar('\n');
 	}
-	ft_putchar('\n');
 }

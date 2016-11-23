@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:20:10 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 17:49:04 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 20:17:04 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,6 @@ int					ft_iscntrl(int c);
 int					ft_isgraph(int c);
 int					ft_isxdigit(int c);
 char				*ft_strcapitalize(char *s);
+size_t				ft_count_words(const char *s, int separator);
 
 #endif

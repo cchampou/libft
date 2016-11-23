@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_count_words.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/06 14:41:05 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 19:07:48 by cchampou         ###   ########.fr       */
+/*   Created: 2016/11/23 19:29:46 by cchampou          #+#    #+#             */
+/*   Updated: 2016/11/23 20:11:15 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
+#include <stdio.h>
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+size_t	ft_count_words(const char *s, int separator)
 {
-	char	*str;
-	size_t	i;
+	size_t	n;
+	size_t	off;
 
+	n = 0;
+	off = 1;
 	if (!s)
-		return (NULL);
-	i = 0;
-	if (!(str = (char*)malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	while (i < len)
+		return (0);
+	while (*s)
 	{
-		str[i] = s[i + start];
-		i++;
+		n = (*s != separator && off) ? n + 1 : n;
+		off = (*s == separator) ? 1 : 0;
+		s++;
 	}
-	str[i] = '\0';
-	return ((!str) ? NULL : str);
+	return (n);
 }
