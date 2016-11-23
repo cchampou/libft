@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 19:20:10 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 16:15:12 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/23 16:26:05 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,5 +97,6 @@ int					ft_str_is_uppercase(char *s);
 int					ft_islower(char c);
 int					ft_isupper(char c);
 char				*ft_strndup(const char *s1, size_t n);
+size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 
 #endif
