@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 15:04:50 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 19:08:38 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/24 13:22:00 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*str;
 
 	if (!s1 || !s2)
-		return (NULL);	
+		return (NULL);
 	i = 0;
 	j = 0;
 	length = ft_strlen(s1) + ft_strlen(s2);
