@@ -6,12 +6,11 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 19:29:46 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/23 20:11:15 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/24 19:22:57 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_count_words(const char *s, int separator)
 {
