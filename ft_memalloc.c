@@ -6,7 +6,7 @@
 /*   By: cchampou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 12:18:42 by cchampou          #+#    #+#             */
-/*   Updated: 2016/11/22 11:26:10 by cchampou         ###   ########.fr       */
+/*   Updated: 2016/11/26 12:50:26 by cchampou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ void	*ft_memalloc(size_t size)
 			|| size > 65535)
 		return (NULL);
 	while (i < size)
-	{
 		ptr[i++] = 0;
-	}
 	ptr[i] = 0;
 	return ((void*)ptr);
 }
